@@ -1,0 +1,51 @@
+<mat-card class="example-card mx-auto">
+  <mat-card-header>
+    <div class="pl-5">
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu"
+      >
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu" xPosition="before">
+        <button mat-menu-item>
+          <mat-icon>report</mat-icon>
+          <span>Report post</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>person</mat-icon>
+          <span>Go to profile</span>
+        </button>
+        <button mat-menu-item disabled>
+          <mat-icon>bookmarks</mat-icon>
+          <span>Save post</span>
+        </button>
+      </mat-menu>
+    </div>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>alteocaka</mat-card-title>
+    <mat-card-subtitle>12 minutes ago</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    mat-card-image
+    src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+    alt="Photo of a Shiba Inu"
+  />
+  <mat-card-content>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+      natus, doloribus facere cumque quidem quam, nostrum iste sed eius ratione
+      doloremque amet sapiente officia porro molestias eos facilis? Rerum,
+      tempore.
+    </p>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <div>
+      <button mat-button><mat-icon>thumb_up</mat-icon></button>
+    </div>
+    <div>
+      <button mat-button><mat-icon>thumb_down</mat-icon></button>
+    </div>
+  </mat-card-actions>
+</mat-card>
